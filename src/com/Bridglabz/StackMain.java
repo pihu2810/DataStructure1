@@ -11,6 +11,8 @@ public class StackMain
 		  stack.push(75);
 		  stack.peak();
 		  stack.pop();
+		  stack.isEmpty();
+		  stack.getSize();
 		  stack.printStack();
 		  
 	  }
