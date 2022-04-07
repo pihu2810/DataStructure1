@@ -1,12 +1,20 @@
 package com.Bridglabz;
 
-public class Stack 
+public class Stack<K>
 {
 	private final LinkedList linkedList;
 	 public Stack() {
 	 linkedList=new LinkedList();
 	 }
-	 public void push(int data) {
+	 public void isEmpty()
+	 {
+		 linkedList.isEmpty();
+	 }
+	 public void getsize()
+	 {
+		 linkedList.getSize();
+	 }
+	 public void push(K data) {
 		 linkedList.add(data);
 	 }
 	 public void printStack() {
