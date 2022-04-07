@@ -17,6 +17,11 @@ public class LinkedList<K>
 			 }
 			 return false;
 			 }
+			 		 
+   public int getSize(){
+	    System.out.println("The Size of the LinkedList = " +size);
+		return size;
+   }
 	   
     public void add(K data) {
 		   Node<K> n = new Node<>(data);
@@ -113,6 +118,23 @@ public class LinkedList<K>
 				 size--;
 			 }
 		 }
+		
+		  public void search(K value) {
+				Node<K> intial=head;
+				
+				if(head==null) {
+					System.out.println("list is empty");
+				}else {
+					while(head.getNext()!=null) {
+						if(head.getData()==value) {
+							System.out.println(value + " is present in linked list");
+							break;
+						}
+						head=head.getNext();
+					}
+					
+				}
+			}
 		 
 	   
 	   public  void printList() {
