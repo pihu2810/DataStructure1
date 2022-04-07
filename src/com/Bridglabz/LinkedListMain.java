@@ -13,6 +13,8 @@ public class LinkedListMain
       list.deleteFirst();
       list.deleteLast();
       list.deleteAtPosition(2);
+      list.search(19);
+      list.getSize();
       list.printList();
       
 	}
