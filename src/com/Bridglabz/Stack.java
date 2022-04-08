@@ -19,7 +19,15 @@ public class Stack<K>
 		 linkedList.printList();
 	 }
 	 public Node peak() {
-		return linkedList.head;
+		public int peek() {
+		if(!isEmpty()) {
+			return top.getData();
+		}
+		else {
+			System.out.println("stack is empty");
+			return 0;
+		}
+	}
 	 }
 	 public void pop()
 	 {
